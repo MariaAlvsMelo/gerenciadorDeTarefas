@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Minhas Tarefas</h1>
+ 
+    <div class="form">
+        <input type="text" id="task-input" placeholder="Nova tarefa" data-cy="input-task">
+        <button id="add-btn" data-cy="btn-add">Adicionar</button>
+    </div>
+ 
+    <p id="mensagem-erro" class="erro" data-cy="msg-erro"></p>
+ 
+    <ul id="task-list" data-cy="task-list"></ul>
+ 
+    <p id="contador" data-cy="contador"></p>
+ 
+    <!-- A ordem importa: primeiro a lógica, depois a tela -->
+    <script src="src/tarefas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
+ 
